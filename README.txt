@@ -1,3 +1,5 @@
+下载地址：https://github.com/hellowjko/myipxe/releases
+
 说明：
 1.执行脚本sh 1-install.sh pxe-all.tar.gz安装PXE服务
 2.上传系统镜像iso文件然后执行sh 2-upload.sh脚本
