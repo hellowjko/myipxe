@@ -3,15 +3,16 @@
 说明：
 1.执行脚本sh 1-install.sh pxe-all.tar.gz安装PXE服务
 2.上传系统镜像iso文件然后执行sh 2-upload.sh脚本
+   delete.sh删除上传的镜像
 3.上传ks文件到/var/www/html/kickstart/目录下
 4.修改macinfo.csv文件并上传当前目录
-5.执行sh 3-template.sh 
+5.执行sh 3-template.sh
 
-
+init_ip.sh为装机后配置IP的脚本，如不需要，在ks文件中不需要添加
 
 macinfo.csv填写说明：
 第1列[ipmi]：IPMI带外地址（格式：10.17.122.1）
-第2列[serial]：序列号
+第2列[serial]：序列号（避免序列号都为数字显示科学计数，规范格式为：sn-abcd12345）
 第3列[mac]：MAC地址（格式：bc:16:95:36:fe:52）
 第4列[role]：服务器角色/服务器名称（格式：标准文件存储管理服务器）
 第5列[hostname]：主机名（格式：FJFZSNL-20F-HH0711-SEV-ZX5300-02U13）
@@ -21,5 +22,8 @@ macinfo.csv填写说明：
 第9列[ks_name]：安装KS文件名称（自定义名称，格式：centos-7.6.ks）
 第10列[dhcp-ip]：dhcp分配的IP地址（格式：192.168.0.1）
 第11列[mask]：子网掩码（格式：22）
+
+
+
 
 
