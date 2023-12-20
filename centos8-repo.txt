@@ -1,0 +1,7 @@
+自定义yum源（centos8）
+
+dnf install createrepo modulemd-tools
+cd repo/
+createrepo ./
+repo2module  -s stable ./
+modifyrepo_c --mdtype=modules modules.yaml repodata/
