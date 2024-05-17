@@ -1,2 +1,2 @@
-ipmi,serial,mac,role,hostname,system,architecture,version,ks_name,dhcp-ip,mask
-30.87.0.148,sn-abcd1234,00:1C:42:F9:4C:87,服务器-1,FJFZDN-502-04-07-A1P1-SEV-ZX5930-02U04,centos,x86_64,7.6,centos-7.6.ks,192.168.0.1,22
+ipmi,serial（Physical hosts）,mac（Virtual machine）,role,hostname,system,architecture,version,ks_name
+10.131.111.1,sn-YT23K21BAPA218-1,00:1c:42:9c:5e:1b,GPU服务器（4070）-201,ECF-FJ-XM-gpu-801,centos,x86_64,7.6,centos-7.6.ks
