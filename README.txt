@@ -11,9 +11,9 @@
 nmap -sP 192.168.1.0/24 > report.txt
 nmap -sP 192.168.21.1-10|grep "report"|awk '{print $NF}'|sed -e 's/^(//g' -e 's/)//g'
 
-delete.sh删除上传的镜像
-如果需要装机后配置IP地址，将http://本机ip/other/init_ip.sh|bash 添加到ks文件中
+delete.sh可以删除上传的镜像，也可手动删除
 ipmitool目录为ipmitool常用命令
+ansible目录为获取服务器dhcp ip地址与服务器序列号对应关系
 
 macinfo.csv填写说明：
 第1列[ipmi]：IPMI带外地址（格式：10.17.122.1）
